@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Share Secret</title>
+
+    <link rel="icon" type="image/png" href="./img/icons/favicon.png" />
+
+    <script>
+      if (!window.customElements) {
+        document.write('<!--');
+      }
+    </script>
+    <script src="./vendor/custom-elements-es5-adapter.js"></script>
+    <!-- ! DO NOT REMOVE THIS COMMENT, WE NEED ITS CLOSING MARKER -->
+  </head>
+
+  <body>
+    <section class="hero is-info is-bold is-small">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <img class="navbar-item" src="img/logo.png" />
+              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu" style="height: 50px;">
+              <div class="navbar-end">
+                <a class="navbar-item">
+                  Login In
+                </a>
+                <span class="navbar-item">
+                  <a class="button is-info is-inverted">
+                    <span class="icon">
+                      <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span>Cart</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            BDB Trading Cards
+          </h1>
+          <h2 class="subtitle">
+            Australia largest collection of singles and sealed pokemon products.
+          </h2>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <nav class="tabs">
+          <div class="container">
+            <div id="navbarMenuHeroB" class="navbar-menu" style="height: 50px;">
+              <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                  Home
+                </a>
+                <a class="navbar-item" href="/products">
+                  Products
+                </a>
+                <a class="navbar-item" href="/aboutus">
+                  About Us
+                </a>
+                <a class="navbar-item" href="/contactus">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <main-view></main-view>
+      </div>
+    </section>
+    <script src="./vendor/webcomponents-loader.js"></script>
+  </body>
+</html>
