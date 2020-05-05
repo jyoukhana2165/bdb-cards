@@ -23,7 +23,7 @@
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <img class="navbar-item" src="img/logo.png" />
+              <img style="height: 150px" class="navbar-item" src="img/logo.png" />
               <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                 <span></span>
                 <span></span>
@@ -65,18 +65,10 @@
           <div class="container">
             <div id="navbarMenuHeroB" class="navbar-menu" style="height: 50px;">
               <div class="navbar-start">
-                <a class="navbar-item" href="/">
-                  Home
-                </a>
-                <a class="navbar-item" href="/products">
-                  Products
-                </a>
-                <a class="navbar-item" href="/aboutus">
-                  About Us
-                </a>
-                <a class="navbar-item" href="/contactus">
-                  Contact Us
-                </a>
+                <app-link style="padding: 0px" class="navbar-item" href="/">Home</app-link>
+                <app-link style="padding: 0px" class="navbar-item" href="/products">Products</app-link>
+                <app-link style="padding: 0px" class="navbar-item" href="/aboutus">About Us</app-link>
+                <app-link style="padding: 0px" class="navbar-item" href="/contactus">Contact Us</app-link>
               </div>
             </div>
           </div>
@@ -86,7 +78,7 @@
 
     <section class="section">
       <div class="container">
-        <main-view></main-view>
+        <my-app></my-app>
       </div>
     </section>
     <script src="./vendor/webcomponents-loader.js"></script>

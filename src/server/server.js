@@ -16,6 +16,9 @@ app.get('/version', (req, res) => {
 });
 
 app.use('/', express.static(distDir));
+app.use('/products', express.static(distDir));
+app.use('/aboutus', express.static(distDir));
+app.use('/contactus', express.static(distDir));
 
 app.listen(port, () => {
     console.log(`Server listening on: http://localhost:${port}`);

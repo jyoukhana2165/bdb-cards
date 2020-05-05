@@ -32,14 +32,14 @@ const polyfills = [
     flatten: true
   },
   {
-      from: resolve(`./node_modules/bulma-tooltip/dist/css/bulma-tooltip.min.css`),
-      to: 'vendor',
-      flatten: true
+    from: resolve(`./node_modules/bulma-tooltip/dist/css/bulma-tooltip.min.css`),
+    to: 'vendor',
+    flatten: true
   },
   {
-      from: resolve(`./node_modules/@fortawesome/fontawesome-free/webfonts`),
-      to: 'webfonts',
-      flatten: true
+    from: resolve(`./node_modules/@fortawesome/fontawesome-free/webfonts`),
+    to: 'webfonts',
+    flatten: true
   }
 ];
 
@@ -83,7 +83,7 @@ module.exports = ({ mode, presets }) => {
             exclude: /node_modules/,
             loader: 'babel-loader',
             options: {
-              plugins: ['@babel/plugin-syntax-dynamic-import'],
+              plugins: [['@babel/plugin-syntax-dynamic-import'], ["@babel/plugin-proposal-decorators", { "legacy": true }]],
               presets: [
                 [
                   '@babel/preset-env',

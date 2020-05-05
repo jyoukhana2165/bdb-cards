@@ -10,7 +10,7 @@ class MainView extends LitElement {
           <link rel="stylesheet" type="text/css" href="./vendor/bulma.css">
           <section class="section">
             <div class="container">
-                <h1 class="title">Pre Order Rebel Clash</h1>
+                <h1 class="title">Rebel Clash Out Now</h1>
                 <img src="../img/rc.png">
             </div>
           </section>
